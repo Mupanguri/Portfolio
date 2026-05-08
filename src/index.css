@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 69%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 100%;
+    --radius: 0rem;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+  }
+
+  .font-serif-body {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+  }
+
+  .font-mono-tech {
+    font-family: ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+    font-size: 11.5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .hover-border-bottom {
+    position: relative;
+    display: inline-block;
+  }
+
+  .hover-border-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hover-border-bottom:hover::after {
+    transform: scaleX(1);
+  }
+
+  .section-padding {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .page-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+  }
+
+  /* Case study fold gallery styles */
+  .content__img {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    will-change: transform;
+  }
+
+  .content__img-inner {
+    grid-area: 1 / -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    will-change: transform;
+  }
+
+  .content__text {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    will-change: transform;
+  }
+
+  .content__text-inner {
+    will-change: transform;
+  }
+}
