@@ -1,73 +1,87 @@
-# React + TypeScript + Vite
+# Ronald Mupanguri — Cybersecurity Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for Ronald Tonderai Mupanguri — IAM Consultant and Security Engineer based in Harare, Zimbabwe.
 
-Currently, two official plugins are available:
+This site was built to present my work honestly and precisely. No inflated claims, no generic cybersecurity language — every number on it traces back to a real engagement, a real tool, or a real design decision.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## What this site covers
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Who I am**
+Four years embedded in Big 4 and mid-tier audit environments (BDO Zimbabwe, Baker Tilly Central Africa), working across financial services, telecoms, and insurance clients in sub-Saharan Africa. My core discipline is IAM — privileged access, role-based access control, user lifecycle governance, access certification. My secondary capability is building the tooling that makes that audit work faster and more precise.
 
-## Expanding the ESLint configuration
+**The case studies**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Four projects that represent the intersection of audit rigour and engineering capability:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Transfer Pricing AI Assistant** — Python pipeline with IQR anomaly detection, AD-gated RBAC, and Entra ID auth. Reduced analysis from 24–32 hours to ~4 hours per engagement. Deployed across 30 internal engagements at BDO Zimbabwe.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2. **Healthcare RBAC System (Blockchain EHR DApp)** — Hyperledger Fabric dApp with smart-contract RBAC (5 roles), AES-256 encrypted on-chain records, ECIES key management, time-bounded emergency access, and immutable on-chain audit trail. Capstone/research project.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+3. **BDO Skills Pulse** — Internal enterprise platform with BDO AD authentication, Entra ID-based provisioning and deprovisioning, API-layer RBAC enforcement, and an HR-only audit trail. Built for live internal deployment.
+
+4. **Akroatis Port Scanner** — Open-source Rust tool using async-std, configurable thread pool (4–32 threads), banner-grabbing service detection, and an egui GUI with JSON/CSV/HTML export. Benchmarks comparable to Nmap at equivalent concurrency.
+
+---
+
+## Stack
+
+- **React + TypeScript** via Vite
+- **GSAP** with ScrollTrigger — all scroll-driven animations and 3D fold effects
+- **Lenis** — smooth scroll, synced with GSAP
+- **Three.js** — custom WebGL fragment/vertex shader background (isometric grid with mouse tracking)
+- **Tailwind CSS** — utility styling with custom component classes
+- **egui** (referenced) — GUI framework used in Akroatis, the Rust port scanner built as part of this portfolio
+
+---
+
+## Running locally
+
+```bash
+cd app
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Runs at `http://localhost:3000`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+Builds to `dist/`.
+
+---
+
+## Project structure
+
+```
+src/
+  components/
+    Navigation.tsx              # Fixed header, scroll-aware blur
+    IsometricGridVolumetricShader.tsx  # Three.js WebGL animated background
+  sections/
+    Hero.tsx                    # Animated headline with GSAP timeline
+    Approach.tsx                # Philosophy, career arc, capability tags
+    Capabilities.tsx            # Four discipline cards with hover glow
+    CaseStudies.tsx             # Four case studies with 3D fold scroll animation
+    Experience.tsx              # Roles, certifications, technical stack
+    Contact.tsx                 # Contact links and footer
+```
+
+All content is co-located in each section component. There is no CMS layer — content lives next to the code that renders it, making it straightforward to update.
+
+---
+
+## Content philosophy
+
+Every claim on this site was reviewed against a strict standard: if it cannot be verified or demonstrated in a technical interview within 15 minutes, it does not belong here. The `portfolio.md` file at the root of this project documents the full audit trail — what was changed, what was removed, and why.
+
+---
+
+## Contact
+
+Ronald Tonderai Mupanguri  
+Harare, Zimbabwe  
+ronald@mupanguri.security
