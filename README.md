@@ -76,7 +76,7 @@ All content is co-located in each section component. There is no CMS layer — c
 
 ## Content philosophy
 
-Every claim on this site was reviewed against a strict standard: if it cannot be verified or demonstrated in a technical interview within 15 minutes, it does not belong here. The `portfolio.md` file at the root of this project documents the full audit trail — what was changed, what was removed, and why.
+Every claim on this site was reviewed against a strict standard: if it cannot be verified or demonstrated in a technical interview within 15 minutes.
 
 ---
 
@@ -84,4 +84,4 @@ Every claim on this site was reviewed against a strict standard: if it cannot be
 
 Ronald Tonderai Mupanguri  
 Harare, Zimbabwe  
-ronald@mupanguri.security
+ronaldtonderaimupanguri@gmail.com
