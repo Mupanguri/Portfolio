@@ -7,21 +7,21 @@ gsap.registerPlugin(ScrollTrigger);
 const roles = [
   {
     period: 'NOV 2025 — PRESENT',
-    title: 'IT Auditor & Cybersecurity Consultant',
+    title: 'IT Auditor & Cybersecurity Specialist',
     org: 'BDO Zimbabwe',
-    focus: 'IAM and IT security audits across 15+ enterprise clients — 87+ control deficiencies identified across privileged access, MFA coverage, and access certification domains.',
+    focus: 'Application security, ITGC, cloud, identity, and DevSecOps engagements across enterprise clients. Led BAS work, ransomware response exercises, a BEC forensics investigation, and security posture work contributing to a US$200,000 engagement win.',
   },
   {
     period: 'FEB 2024 — OCT 2025',
-    title: 'Security Engineer',
+    title: 'Security Engineer (Senior Cybersecurity Engineer)',
     org: 'Baker Tilly Central Africa',
-    focus: 'Access control assessment, MFA deployment reviews, RBAC restructuring, and vulnerability assessments documented by CVSS severity across client environments.',
+    focus: 'Led VAPT across web, mobile, and API targets; ransomware recovery for 313 machines and 13TB of targeted data; vulnerability management, incident response, BAS, and secure coding enablement.',
   },
   {
     period: 'FEB 2022 — JAN 2024',
     title: 'Technology Operations Analyst',
     org: 'Baker Tilly Central Africa',
-    focus: 'IT infrastructure and security assessment support across 20+ organisations — user access provisioning, joiner–mover–leaver governance, and digital forensic investigation support.',
+    focus: 'Infrastructure assessments across 20+ organisations, IAM and lifecycle management, Python/C/Bash automation, and digital forensics using Sleuth Kit and Autopsy.',
   },
 ];
 
@@ -30,13 +30,29 @@ const certifications = [
   { name: 'AWS Certified Cloud Practitioner', status: 'ACTIVE', active: true },
   { name: 'ISC2 Certified in Cybersecurity (CC)', status: 'ACTIVE', active: true },
   { name: 'Belkasoft Corporate Investigations', status: 'ACTIVE', active: true },
-  { name: 'CISA', status: 'IN PROGRESS — JUNE 2026', active: false },
+  { name: 'PNPT', status: 'ATTAINED', active: true },
+  { name: 'CISA', status: 'IN PREPARATION — JAN 2027', active: false },
 ];
 
 const tools = [
   'Active Directory',
   'Entra ID',
   'AWS IAM',
+  'Microsoft Intune',
+  'OWASP ZAP',
+  'sqlmap',
+  'Invicti',
+  'Semgrep',
+  'Snyk Code',
+  'SonarQube',
+  'Sleuth Kit',
+  'Autopsy',
+  'Splunk',
+  'KQL',
+  'Docker',
+  'GitLab CI/CD',
+  'Playwright',
+  'Postman',
   'Nessus',
   'Acunetix',
   'Burp Suite',
@@ -49,6 +65,8 @@ const tools = [
   'Akroatis',
   'egui',
   'async-std',
+  'PowerShell',
+  'Bash',
 ];
 
 export default function Experience() {

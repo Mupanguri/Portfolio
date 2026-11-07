@@ -66,11 +66,11 @@ export default function Approach() {
   }, []);
 
   const capabilities = [
-    'IAM GOVERNANCE',
-    'PRIVILEGED ACCESS',
-    'IDENTITY LIFECYCLE',
-    'RISK FRAMEWORKS',
-    'VULNERABILITY ASSESSMENT',
+    'PENETRATION TESTING',
+    'INCIDENT RESPONSE',
+    'DIGITAL FORENSICS',
+    'IDENTITY SECURITY',
+    'SECURE SDLC',
     'SECURITY AUTOMATION',
   ];
 
@@ -93,17 +93,17 @@ export default function Approach() {
               style={{ color: '#000', fontSize: 'clamp(18px, 2.5vw, 28px)', maxWidth: '600px' }}
             >
               Security is not a product you install — it is a discipline you architect.
-              I audit what others build and engineer what teams can't find time to build
-              themselves — operating at the intersection of identity governance, access
-              control design, and hands-on security tooling.
+              I assess, break, defend, and improve the systems organisations depend on —
+              from application security and incident response to identity governance and
+              secure delivery.
             </p>
             <p
               className="font-serif-body mt-8"
               style={{ color: '#555', fontSize: 'clamp(16px, 2vw, 22px)', maxWidth: '560px' }}
             >
-              From on-premise Active Directory to Entra ID and AWS IAM — from ISO 27001
-              gap assessments to custom Rust tooling — every engagement ends with controls
-              that can be validated, measured, and defended under audit scrutiny.
+              Across web, mobile, and API VAPT, ransomware recovery, digital forensics,
+              cloud and endpoint security, and GRC assessments, every engagement ends
+              with controls that can be validated, measured, and defended under audit scrutiny.
             </p>
           </div>
 

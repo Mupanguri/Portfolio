@@ -1,6 +1,6 @@
 # Ronald Mupanguri — Cybersecurity Portfolio
 
-Personal portfolio website for Ronald Tonderai Mupanguri — IAM Consultant and Security Engineer based in Harare, Zimbabwe.
+Personal portfolio website for Ronald Tonderai Mupanguri — Cybersecurity Specialist, IT Auditor, and Penetration Tester based in Harare, Zimbabwe.
 
 This site was built to present my work honestly and precisely. No inflated claims, no generic cybersecurity language — every number on it traces back to a real engagement, a real tool, or a real design decision.
 
@@ -9,7 +9,7 @@ This site was built to present my work honestly and precisely. No inflated claim
 ## What this site covers
 
 **Who I am**
-Four years embedded in Big 4 and mid-tier audit environments (BDO Zimbabwe, Baker Tilly Central Africa), working across financial services, telecoms, and insurance clients in sub-Saharan Africa. My core discipline is IAM — privileged access, role-based access control, user lifecycle governance, access certification. My secondary capability is building the tooling that makes that audit work faster and more precise.
+Four years delivering application security, VAPT, incident response, digital forensics, GRC, identity security, and secure SDLC advisory across financial services, telecoms, and insurance clients. I also build the tooling that makes security and audit work faster and more precise.
 
 **The case studies**
 
@@ -21,7 +21,7 @@ Four projects that represent the intersection of audit rigour and engineering ca
 
 3. **BDO Skills Pulse** — Internal enterprise platform with BDO AD authentication, Entra ID-based provisioning and deprovisioning, API-layer RBAC enforcement, and an HR-only audit trail. Built for live internal deployment.
 
-4. **Akroatis Port Scanner** — Open-source Rust tool using async-std, configurable thread pool (4–32 threads), banner-grabbing service detection, and an egui GUI with JSON/CSV/HTML export. Benchmarks comparable to Nmap at equivalent concurrency.
+4. **Akroatis Vulnerability Intelligence Engine** — Rust tool ingesting NVD CVE and Exploit-DB data into SQLite, with BM25/version-interval ranking, TCP service discovery, an egui GUI, and Dockerized GitLab CI/CD.
 
 ---
 
@@ -32,14 +32,14 @@ Four projects that represent the intersection of audit rigour and engineering ca
 - **Lenis** — smooth scroll, synced with GSAP
 - **Three.js** — custom WebGL fragment/vertex shader background (isometric grid with mouse tracking)
 - **Tailwind CSS** — utility styling with custom component classes
-- **egui** (referenced) — GUI framework used in Akroatis, the Rust port scanner built as part of this portfolio
+- **egui** — GUI framework used in Akroatis, the Rust vulnerability intelligence engine
 
 ---
 
 ## Running locally
 
 ```bash
-cd app
+cd Portfolio
 npm install
 npm run dev
 ```
@@ -51,6 +51,23 @@ npm run build
 ```
 
 Builds to `dist/`.
+
+## CI/CD
+
+The [GitHub Actions workflow](.github/workflows/ci-cd.yml) runs `npm ci` and a
+production TypeScript/Vite build for every pull request and push. Deployment is
+handled by Vercel.
+
+To prevent an unverified change from reaching production:
+
+1. In GitHub, protect the `main` branch and require the **Validate and build**
+   status check before merging.
+2. Require pull requests and disable direct pushes to `main`.
+3. In Vercel, keep the production branch set to `main`.
+
+Vercel will deploy previews for pull requests and production after a pull
+request is merged. If commits are pushed directly to `main`, Vercel can deploy
+before GitHub Actions finishes, so branch protection is required.
 
 ---
 

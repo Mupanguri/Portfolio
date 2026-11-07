@@ -274,18 +274,20 @@ export default function IsometricGridVolumetricShader() {
     }
 
     function animate() {
-      requestAnimationFrame(animate);
+      animationFrameId = requestAnimationFrame(animate);
       material.uniforms.u_time.value = performance.now() * 0.001;
       renderer.render(scene, camera);
     }
 
+    let animationFrameId = requestAnimationFrame(animate);
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('resize', handleResize);
-    animate();
 
     return () => {
+      cancelAnimationFrame(animationFrameId);
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('resize', handleResize);
+      renderer.domElement.remove();
       renderer.dispose();
       geometry.dispose();
       material.dispose();

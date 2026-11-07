@@ -29,8 +29,8 @@ const caseStudies = [
     subtitle: 'ACCESS GOVERNANCE · BDO SKILLS PULSE',
     video: '/videos/case-study-03.mp4',
     problem: 'No internal system for managing staff competency validation or controlling access to sensitive training materials and performance data across departments.',
-    approach: 'Built enterprise platform with BDO Active Directory authentication and Entra ID-based provisioning and deprovisioning. RBAC enforced at the API layer. Role structure: Staff, Manager, HR Admin, Department Head. All user interactions logged at every level — audit trail accessible to HR only.',
-    impact: 'Demonstrates IAM implementation as a developer, not just as an auditor: identity-linked provisioning, API-layer authorization enforcement, and a fully auditable access log — built for a live internal deployment at BDO Zimbabwe.',
+    approach: 'Built a React/Node.js/PostgreSQL platform with Super Admin, Admin, and User portal tiers, timed quiz sessions, analytics, participant tracking, CSV export, role-based access, and audit logging protected by a super-password gate.',
+    impact: 'Deployed to 100+ staff across seven departments, demonstrating identity-linked provisioning, API-layer authorization enforcement, analytics, and auditable access controls.',
   },
   {
     id: '04',
@@ -38,8 +38,8 @@ const caseStudies = [
     subtitle: 'SECURITY TOOL DEVELOPMENT · RUST',
     video: '/videos/case-study-04.mp4',
     problem: 'CLI-only port scanners require flag familiarity and produce raw output — increasing time-to-report and transcription errors in consultant-facing authorized assessment workflows.',
-    approach: 'Developed in Rust using async-std runtime. Configurable thread pool (default 4 threads, effective range 4–32). Service detection via banner grabbing: socket connection reads initial bytes, pattern-matched against HTTP, SSH, FTP, and SMTP signatures. GUI built with egui — real-time progress, per-host result table, JSON/CSV/HTML export.',
-    impact: 'Scans a /24 subnet at moderate concurrency (8–16 threads) with performance comparable to Nmap under equivalent conditions. IPv4 and IPv6 support. Rate limiting bounded at the engine level. Input validation enforced — no passive scanning, explicit target required.',
+    approach: 'Developed a Rust vulnerability intelligence engine integrating NVD CVE and Exploit-DB data into SQLite with WAL/FTS5 storage and BM25 plus version-interval ranking. The TCP scanner and egui GUI provide service discovery, with a Dockerized GitLab CI/CD pipeline.',
+    impact: 'Demonstrates threat-intelligence engineering, async Rust, information retrieval, and DevSecOps design. The pipeline runs linting, builds, 36 unit/integration tests, Docker packaging, and smoke tests.',
   },
 ];
 

@@ -6,28 +6,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 const capabilities = [
   {
-    title: 'Identity & Access Management',
+    title: 'Application Security & VAPT',
     description:
-      'Privileged access assessment, RBAC design (role mining, SoD matrix, entitlement review), user lifecycle governance (Joiner–Mover–Leaver), MFA coverage gap analysis, and access certification across Active Directory, Entra ID, and AWS IAM. Primary discipline — 87+ control deficiencies identified across 12+ enterprise engagements.',
-    meta: 'RBAC / PAM / IGA / MFA',
+      'Full-cycle black-box, grey-box, and white-box testing across web, mobile, API, and ERP targets. OWASP Top 10 and NIST SP 800-115 testing with Burp Suite, OWASP ZAP, sqlmap, Nessus, Acunetix, and custom Python tooling.',
+    meta: 'WEB / MOBILE / API / INFRA',
   },
   {
-    title: 'Vulnerability Assessment & Security Engineering',
+    title: 'Incident Response & Forensics',
     description:
-      'Authenticated and unauthenticated vulnerability scanning with Nessus and Acunetix. Web application testing using Burp Suite. Network analysis with Wireshark and Nmap. Developing capability — tools and methodology backed by formal engagement scope, not self-assessed expertise.',
-    meta: 'NESSUS / ACUNETIX / BURP SUITE',
+      'Lead response for ransomware and complex security incidents, including containment, recovery, post-incident control improvements, and digital forensic investigations using Sleuth Kit and Autopsy. Ransomware recovery included 313 machines and 13TB of targeted data.',
+    meta: 'IR / RANSOMWARE / FORENSICS',
   },
   {
-    title: 'Risk, Governance & Compliance',
+    title: 'GRC, Audit & Identity Security',
     description:
-      'IT risk assessments and control gap analysis mapped to ISO 27001 Annex A, NIST CSF identity function, COBIT 2019, and SOC 2 Trust Service Criteria. Advisory and audit delivery across financial services, telecoms, and insurance — assessment ownership, not framework implementation ownership.',
-    meta: 'ISO 27001 / NIST CSF / SOC 2',
+      'ITGC and application-control audits, IAM and lifecycle reviews, cloud security assessments, and risk-rated remediation roadmaps across financial services, telecommunications, and insurance. Controls mapped to ISO 27001, NIST CSF, COBIT, SOC 2, and HIPAA.',
+    meta: 'ITGC / IAM / CLOUD / GRC',
   },
   {
-    title: 'Security Tool Development',
+    title: 'DevSecOps & Security Engineering',
     description:
-      'Production tooling in Python and Rust: AI-driven audit analytics pipeline (IQR anomaly detection, AD-gated RBAC, Entra ID auth), and Akroatis — a Rust port scanner with async-std concurrency, banner-grabbing service detection, and an egui GUI. Built to solve real gaps in audit workflows.',
-    meta: 'PYTHON / RUST / TYPESCRIPT',
+      'Security tooling and secure SDLC enablement across Python, Rust, React, Node.js, and TypeScript. Curated SCA, SAST, and DAST workflows using Semgrep, Snyk Code, SonarQube, Invicti, and Burp Suite, with Entra ID, Intune, AWS, Azure, and GitLab CI/CD.',
+    meta: 'SCA / SAST / DAST / CLOUD',
   },
 ];
 

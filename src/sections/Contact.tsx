@@ -78,16 +78,16 @@ export default function Contact() {
 
         <div ref={linksRef} className="flex flex-col items-center" style={{ gap: '24px' }}>
           <a
-            href="mailto:ronald@mupanguri.security"
+            href="mailto:ronaldtonderaimupanguri@gmail.com"
             className="font-mono-tech hover-border-bottom transition-colors duration-300"
             style={{ color: '#b0b0b0', fontSize: '14px' }}
           >
-            ronald@mupanguri.security
+            ronaldtonderaimupanguri@gmail.com
           </a>
 
           <div className="flex items-center" style={{ gap: '40px' }}>
             <a
-              href="https://linkedin.com/in/ronaldmupanguri"
+              href="https://www.linkedin.com/in/ronald-mupanguri/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono-tech hover-border-bottom transition-colors duration-300"
@@ -96,7 +96,7 @@ export default function Contact() {
               LINKEDIN
             </a>
             <a
-              href="https://github.com/ronaldmupanguri"
+              href="https://github.com/Mupanguri"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono-tech hover-border-bottom transition-colors duration-300"

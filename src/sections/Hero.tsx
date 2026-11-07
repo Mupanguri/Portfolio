@@ -49,7 +49,7 @@ export default function Hero() {
       <div className="flex-1 flex items-end section-padding pb-16">
         <h1 className="hero-title font-display text-white" style={{ fontSize: 'clamp(3rem, 12.5vw, 14rem)' }}>
           <span ref={line1Ref} className="block overflow-hidden">
-            <span className="block">IDENTITY</span>
+            <span className="block">CYBER</span>
           </span>
           <span ref={line2Ref} className="block overflow-hidden">
             <span className="block">SECURITY</span>
@@ -66,7 +66,7 @@ export default function Hero() {
         className="section-padding pb-8"
       >
         <p className="font-mono-tech" style={{ color: '#b0b0b0' }}>
-          IAM CONSULTANT · SECURITY ENGINEER
+          CYBERSECURITY CONSULTANT · IT AUDITOR · PENETRATION TESTER
         </p>
       </div>
     </section>
